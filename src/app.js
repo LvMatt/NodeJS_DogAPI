@@ -27,7 +27,7 @@ app.get('', (req, res)=>{
     })
 })
 
-
+// Get Dog
 app.get('/dog', (req, res)=>{
     if(!req.query.dog) {
         return res.send({
@@ -51,3 +51,7 @@ var PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
     console.log('Server is up on port 3000.')
 });
+
+const app = ()=>{
+    console.log("app");
+}
