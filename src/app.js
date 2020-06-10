@@ -46,6 +46,8 @@ app.get('/dog', (req, res)=>{
     })
 })
 
+var PORT = process.env.PORT || 3001
+
 app.listen(3000, () => {
     console.log('Server is up on port 3000.')
 });
